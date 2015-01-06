@@ -1,0 +1,11 @@
+
+
+This code will read in a Nintendo 64 controller and fake it as being a wii classic controller using an ATmega microcontroller.
+The wii remote extension should be connected to the SCL and SDA ports on the AVR and the N64 data pin should be connected to PD1.
+
+This code has only been tested with an ATMega328p(Arduino), but should work with most ATmegas.
+
+The code used to communicate with the wiimote is a modified version of Frank Zhao's wii drum controller code which can be found at https://code.google.com/p/circle-of-current/. This project would not have been possible without it.
+
+This code is licensed under the Apache License 2.0 which can be found here: www.apache.org/licenses/LICENSE-2.0
+
