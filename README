@@ -4,6 +4,9 @@ This code will read in a Nintendo 64 controller and fake it as being a wii class
 The wii remote extension should be connected to the SCL and SDA ports on the AVR and the N64 data pin should be connected to PD1.
 
 This code has only been tested with an ATMega328p(Arduino), but should work with most ATmegas.
+It also requires that the ATMega be clocked at 16MHz as much of the controller timing is down to the cycle.
+
+The code now works with Gamecube controllers. By default a gamecube controller is used. To switch to a Nintendo 64 controller, jump pins 4 and 5 together. The Gamecube controller is connected in the same way that Nintendo 64 controllers are. At this point Rumble is not supported.
 
 The code used to communicate with the wiimote is a modified version of Frank Zhao's wii drum controller code which can be found at https://code.google.com/p/circle-of-current/. This project would not have been possible without it.
 
